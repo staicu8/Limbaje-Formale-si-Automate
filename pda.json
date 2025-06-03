@@ -1,0 +1,11 @@
+{
+  "start": "q0",
+  "final": ["q0", "q3"],
+  "routes": [
+    { "inc": "q0", "read": "ε", "pop": "ε", "push": "Z0", "fin": "q1" },
+    { "inc": "q1", "read": "a", "pop": "ε", "push": "A", "fin": "q1" },
+    { "inc": "q1", "read": "ε", "pop": "ε", "push": "ε", "fin": "q2" },
+    { "inc": "q2", "read": "b", "pop": "A", "push": "ε", "fin": "q2" },
+    { "inc": "q2", "read": "ε", "pop": "Z0", "push": "ε", "fin": "q3" }
+  ]
+}

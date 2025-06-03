@@ -1,0 +1,12 @@
+{
+  "alphabet": ["0", "1"],
+  "epsilon_symbol": "ε",
+  "start": ["q0"],
+  "final": ["q2"],
+  "routes": [
+    { "inc": "q0", "state": "0", "fin": ["q0", "q1"] },
+    { "inc": "q0", "state": "ε", "fin": ["q1"] },
+    { "inc": "q1", "state": "1", "fin": ["q2"] },
+    { "inc": "q2", "state": "0", "fin": ["q2"] }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "start_state": "q0",
+  "final_states": ["q_accept"],
+  "blank_symbol": "B",
+  "transitions": [
+    {
+      "current_state": "q0",
+      "read_symbol": "0",
+      "next_state": "q1",
+      "write_symbol": "0",
+      "move": "R"
+    },
+    {
+      "current_state": "q1",
+      "read_symbol": "1",
+      "next_state": "q2",
+      "write_symbol": "1",
+      "move": "R"
+    },
+    {
+      "current_state": "q2",
+      "read_symbol": "0",
+      "next_state": "q3",
+      "write_symbol": "0",
+      "move": "R"
+    },
+    {
+      "current_state": "q3",
+      "read_symbol": "B",
+      "next_state": "q_accept",
+      "write_symbol": "B",
+      "move": "S"
+    }
+  ]
+}
