@@ -1,0 +1,28 @@
+{
+  "states": [
+    "HolIntrare",
+    "Sufragerie",
+    "Bucatarie",
+    "Dormitor",
+    "Baie",
+    "Iesire"
+  ],
+  "sigma": ["0", "1", "2", "3"],
+  "start": ["HolIntrare"],
+  "final": ["Iesire"],
+  "routes": [
+    {"inc": "HolIntrare", "state": "1", "fin": "Sufragerie"}, 
+    {"inc": "HolIntrare", "state": "2", "fin": "Baie"},       
+
+    {"inc": "Sufragerie", "state": "3", "fin": "HolIntrare"}, 
+    {"inc": "Sufragerie", "state": "1", "fin": "Bucatarie"},    
+    {"inc": "Sufragerie", "state": "0", "fin": "Dormitor"},   
+
+    {"inc": "Bucatarie", "state": "3", "fin": "Sufragerie"}, 
+    {"inc": "Bucatarie", "state": "2", "fin": "Iesire"},       
+
+    {"inc": "Dormitor", "state": "2", "fin": "Sufragerie"}, 
+
+    {"inc": "Baie", "state": "0", "fin": "HolIntrare"}  
+  ]
+}
