@@ -63,7 +63,7 @@ else:
 
 if locatie_curenta == camera_iesire:
     if are_cheia:
-        print("Felicitari! Ai evadat cu cheia! Ai CASTIGAT!")
+        print("Felicitari! Ai evadat cu cheia! Ai Castigat!")
     else:
         print(f"Ai ajuns la iesire dar ai uitat '{nume_obiect_cheie}'. Pierdut!")
 else:
