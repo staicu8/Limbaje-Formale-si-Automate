@@ -129,7 +129,7 @@ Scriptul(`pda.py`) simuleaza un PDA (Pushdown Automaton).
   ]
 }
 ```
-# Simulare Masina Turing
+# Masina Turing
 
 
 Script-ul (`masina_turing.py`) implementeaza o masina turing simpla configurabila prin fisier json.
