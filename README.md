@@ -4,7 +4,7 @@ Script-ul (`dfa.py`) încarcă un DFA dintr-un fișier text și verifică dacă 
 
 ### Formatul fișierului de intrare (`dfa.txt`)
 Exemplu (`dfa.txt`):
-```json
+```txt
 [States]
 q0,0 # q0 este starea inițială
 q1,2
