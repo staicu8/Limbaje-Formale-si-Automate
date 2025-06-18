@@ -1,12 +1,12 @@
 ## Deterministic Finite Automata (DFA)
 
-Script-ul (`dfa.py`) încarcă un DFA dintr-un fișier text și verifică dacă un șir introdus este acceptat de acesta.
+Script-ul (`dfa.py`) încarca un DFA dintr-un fisier text si verifica daca un sir introdus este acceptat de acesta.
 
-### Formatul fișierului de intrare (`dfa.txt`)
+### Formatul fisierului de intrare (`dfa.txt`)
 Exemplu (`dfa.txt`):
 ```txt
 [States]
-q0,0 # q0 este starea inițială
+q0,0 # q0 este starea initiala
 q1,2
 q2,1 # q2 este stare finală
 [End]
@@ -63,7 +63,7 @@ Simuleaza pas cu pas fiecare simbol din input
 Accepta daca cel putin o stare activa finala este atinsa
 
 
-**## Joc NFA
+### Joc NFA
 
 Script-ul (`nfa_joc.py`) simuleaza un joc cu ajutorul unui NFA.
 
@@ -109,7 +109,7 @@ Ai pornit din: HolIntrare
  -> Te-ai mutat in: Iesire
 Joc terminat. Locatia finala: Iesire.
 Ai la tine: lingura.
-Felicitari! Ai evadat cu cheia! Ai CASTIGAT!
+Felicitari! Ai evadat cu cheia! Ai Castigat!
 
 ## Pushdown Automata(PDA)
 
