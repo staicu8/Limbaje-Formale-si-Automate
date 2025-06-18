@@ -67,4 +67,4 @@ def run_dfa(automata, input_str):
     return current_state in automata["finals"]
 
 str=input("Enter a string:")
-print(run_dfa(load_dfa("automata.txt"), str))
+print(run_dfa(load_dfa("dfa.txt"), str))
