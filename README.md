@@ -4,7 +4,7 @@ Script-ul (`dfa.py`) încarcă un DFA dintr-un fișier text și verifică dacă 
 
 ### Formatul fișierului de intrare (`dfa.txt`)
 Exemplu (`dfa.txt`):
-
+```json
 [States]
 q0,0 # q0 este starea inițială
 q1,2
@@ -24,6 +24,7 @@ q1,q2,1
 q2,q1,0
 q2,q0,1
 [End]
+```
 ### Ce face codul
 
 1. Încarcă definiția unui DFA dintr-un fișier `.txt`
@@ -38,6 +39,7 @@ Script-ul (`nfa.py`) simuleaza un NFA incarcat dintr-un fisier `.json`.
 
 Exemplu:
 nfa.json
+```json
 {
   "alphabet": ["0", "1"],
   "epsilon_symbol": "ε",
@@ -50,7 +52,7 @@ nfa.json
     { "inc": "q2", "state": "0", "fin": ["q2"] }
   ]
 }
-
+```
 ### Ce face codul
 Citeste configuratia unui NFA din fisierul nfa.json
 
@@ -61,7 +63,7 @@ Simuleaza pas cu pas fiecare simbol din input
 Accepta daca cel putin o stare activa finala este atinsa
 
 
-**## Joc Aventura cu Automate NFA
+**## Joc NFA
 
 Script-ul (`nfa_joc.py`) simuleaza un joc cu ajutorul unui NFA.
 
@@ -78,6 +80,7 @@ Script-ul (`nfa_joc.py`) simuleaza un joc cu ajutorul unui NFA.
 ### Formatul fisierului `nfa_joc.json`
 
 nfa_joc.json
+```json
 {
   "states": ["HolIntrare", "Sufragerie", "Bucatarie", "Dormitor", "Baie", "Iesire"],
   "sigma": ["0", "1", "2", "3"],
@@ -95,7 +98,7 @@ nfa_joc.json
     {"inc": "Baie", "state": "0", "fin": "HolIntrare"}
   ]
 }
-
+```
 
 ### Exemplu de joc:
 Introdu secventa de miscari: 1032
@@ -113,7 +116,7 @@ Felicitari! Ai evadat cu cheia! Ai CASTIGAT!
 Scriptul(`pda.py`) simuleaza un PDA (Pushdown Automaton).
 
 ### Fisier de configurare: `pda.json`
-
+```
 {
   "start": "q0",
   "final": ["q0", "q3"],
@@ -125,7 +128,7 @@ Scriptul(`pda.py`) simuleaza un PDA (Pushdown Automaton).
     { "inc": "q2", "read": "ε", "pop": "Z0", "push": "ε", "fin": "q3" }
   ]
 }
-
+```
 # Simulare Masina Turing
 
 
@@ -139,6 +142,7 @@ Script-ul (`masina_turing.py`) implementeaza o masina turing simpla configurabil
 - `transitions`: lista de tranzitii in format complet
 
 ### Ex:
+```json
 {
   "start_state": "q0",
   "final_states": ["q_accept"],
@@ -174,3 +178,4 @@ Script-ul (`masina_turing.py`) implementeaza o masina turing simpla configurabil
     }
   ]
 }
+```
